@@ -344,6 +344,14 @@
   dependencies:
     tslib "^1.7.0"
 
+"@progress/kendo-angular-layout@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-layout/-/kendo-angular-layout-3.2.0.tgz#dd62ba146061c0596aef67b559773a206d502d59"
+  dependencies:
+    "@progress/kendo-schematics" "^0.2.0"
+    "@telerik/kendo-draggable" "^1.5.1"
+    tslib "^1.7.0"
+
 "@progress/kendo-angular-pdf-export@^1.0.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@progress/kendo-angular-pdf-export/-/kendo-angular-pdf-export-1.2.0.tgz#a4ea89343722dffcf02299f1309beffa10ca001f"

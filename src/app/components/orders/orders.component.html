@@ -1,0 +1,16 @@
+<kendo-grid
+  [data]="query | async"
+  [loading]="loading"
+  [skip]="state.skip"
+  [pageSize]="state.take"
+  [scrollable]="'virtual'"
+  [rowHeight]="40"
+  [height]="450"
+  (pageChange)="pageChange($event)"
+>
+  <kendo-grid-column field="OrderID" [width]="80" title="ID"></kendo-grid-column>
+  <kendo-grid-column field="ShipName" title="Ship Name" [width]="200"></kendo-grid-column>
+  <kendo-grid-column field="ShipAddress" title="Ship Address" [width]="200"></kendo-grid-column>
+  <kendo-grid-column field="ShipCity" title="Ship City" [width]="100"></kendo-grid-column>
+  <kendo-grid-column field="ShipCountry" title="Ship Country" [width]="100"></kendo-grid-column>
+</kendo-grid>
