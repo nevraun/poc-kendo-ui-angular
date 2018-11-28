@@ -4,12 +4,14 @@
     POC Kendo UI for Angular
   </h1>
 </div>
-<nav>
-  <a routerLink="/products" routerLinkActive="active">Products</a>
-  <a routerLink="/orders" routerLinkActive="active">Orders</a>
-</nav>
-<kendo-panelbar>
-  <kendo-panelbar-item title="Products" routerLink="/products" ></kendo-panelbar-item>
-  <kendo-panelbar-item title="Orders" routerLink="/orders" ></kendo-panelbar-item>
-</kendo-panelbar>
-<router-outlet></router-outlet>
+<kendo-splitter style="height: 100%">
+  <kendo-splitter-pane [collapsible]="true" [scrollable]="false" size="150px">
+    <kendo-panelbar>
+      <kendo-panelbar-item title="Products" routerLink="/products"></kendo-panelbar-item>
+      <kendo-panelbar-item title="Orders" routerLink="/orders"></kendo-panelbar-item>
+    </kendo-panelbar>
+  </kendo-splitter-pane>
+  <kendo-splitter-pane>
+    <router-outlet></router-outlet>
+  </kendo-splitter-pane>
+</kendo-splitter>

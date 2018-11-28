@@ -1,4 +1,3 @@
-<h2>Simple Grid</h2>
 <kendo-grid
   [data]="view | async"
   [loading]="view.loading"
@@ -8,6 +7,7 @@
   [sortable]="true"
   [pageable]="true"
   [scrollable]="'none'"
+  [height]="450"
   (dataStateChange)="dataStateChange($event)"
 >
   <kendo-grid-column field="CategoryID" width="130"></kendo-grid-column>
